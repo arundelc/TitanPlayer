@@ -10,13 +10,16 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import us.abaddonsoftware.bll.Song;
 
 /**
  *
  * @author abaddon
  */
 public class PlaylistTest {
-    
+    private Song newSong1;
+    private Song newSong2;
+    private Song newSong3;
     public PlaylistTest() {
     }
 
@@ -30,7 +33,10 @@ public class PlaylistTest {
     
     @Before
     public void setUp() {
-    }
+        newSong1 = new Song("Head like a hole", "Nine inch Nails");
+        newSong2 = new Song("Black Light Burns", "I want you to");
+        newSong3 = new Song("The Exies", "Feeling Lo-Fi");
+    } 
     
     @After
     public void tearDown() {
@@ -41,9 +47,43 @@ public class PlaylistTest {
     // @Test
     // public void hello() {}
     @Test
-    public void testCreatePlaylist()
+    public void testCreateEmptyPlaylist()
     {
-    Playlist myPlaylist = new Playlist("Test Playlist");
+    Playlist emptyPlaylist = new Playlist("Empty Playlist");
+    assertEquals(0, emptyPlaylist.songCount());
+    }
+    @Test
+    public void testNameOfPlaylist()
+    {
+        Playlist newPlaylist = new Playlist("Garbage that I like");
+        assertTrue("This name should match the original name", newPlaylist.getName().equals("Garbage that I like"));
+    }
     
+    @Test
+    public void testAddToPlaylist()
+    {
+        Playlist newPlaylist = new Playlist("Garbage that I like");
+        newPlaylist.addSong(newSong1);
+        assertTrue("playlist should increment and playlist should contain the song", newPlaylist.songCount() == 1 && newPlaylist.songExists(newSong1));
+    }
+    
+    @Test 
+    public void testRemoveFromPlaylist()
+    {
+        Playlist newPlaylist = new Playlist("Remove Playlist Test");
+        newPlaylist.addSong(newSong2);
+        int holdCountBeforeRemove = newPlaylist.songCount();
+        newPlaylist.removeSong(newSong2);
+        assertTrue("The song count before removal should be one and after should be zero", holdCountBeforeRemove == 1 && newPlaylist.songCount() == 0);     
+    }
+    
+    @Test
+    public void testAddDuplicateSong() //linked list should allow me to add a dupe
+    {
+        Playlist newPlaylist = new Playlist("The B-sides");
+        newPlaylist.addSong(newSong3);
+        newPlaylist.addSong(newSong3);
+        newPlaylist.addSong(newSong3);
+        assertTrue("Song count should be 3 after 3 duplicates added", newPlaylist.songCount() == 3);    
     }
 }

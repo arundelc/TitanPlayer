@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="abaddon-laptop" name="LibraryTest" tests="3" time="0.266" timestamp="2012-04-06T16:04:18">
+<testsuite errors="0" failures="0" hostname="abaddon-laptop" name="LibraryTest" tests="4" time="1.867" timestamp="2012-04-06T21:52:55">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -69,7 +69,7 @@
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner LibraryTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/abaddon/NetBeansProjects/titanPlayer/build/test/results/TEST-LibraryTest.xml crashfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junitvmwatcher7994656809515592117.properties propsfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junit9090939568551855098.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner LibraryTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/abaddon/NetBeansProjects/titanPlayer/build/test/results/TEST-LibraryTest.xml crashfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junitvmwatcher1287133909264348479.properties propsfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junit5128411216991921880.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="libs.Java-EE-GlassFish-v3.wsjwsdp" value="" />
@@ -272,7 +272,6 @@
     <property name="javadoc.encoding.used" value="UTF-8" />
     <property name="libs.DataBindingME-SVG.src" value="/home/abaddon/netbeans-7.1.1/mobility/sources/netbeans_databindingme_svg-src.zip" />
     <property name="dist.jar" value="dist/titanPlayer.jar" />
-    <property name="netbeans.automatic.build" value="true" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.project.name" value="titanPlayer" />
     <property name="netbeans.hash.code" value="unique=NB_CND_GFMOD_GROOVY_JAVA_MOB_PHP_WEBEE0e923f794-8ac4-46fd-b21c-71df9957d1b8_f66c8990-2770-4944-9657-8d01163b1688" />
@@ -288,28 +287,27 @@
     <property name="annotation.processing.processors.list" value="" />
     <property name="libs.primefaces.maven-pom" value="" />
     <property name="debug-args-line" value="-Xdebug" />
-    <property name="libs.NetBeans MIDP Components.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/netbeans_midp_components_basic.jar" />
     <property name="sun.zip.disableMemoryMapping" value="true" />
+    <property name="libs.NetBeans MIDP Components.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/netbeans_midp_components_basic.jar" />
     <property name="libs.javaee-api-6.0.maven-pom" value="" />
     <property name="libs.JWSAntTasks.src" value="" />
-    <property name="jar.index" value="false" />
     <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="jar.index" value="false" />
     <property name="libs.hibernate-persistence.maven-pom" value="" />
-    <property name="libs.spring-framework300.javadoc" value="" />
     <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="libs.spring-framework300.javadoc" value="" />
     <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="guice.disable.misplaced.annotation.check" value="true" />
-    <property name="libs.NetBeans MIDP Components WMA.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/netbeans_midp_components_wma.jar" />
     <property name="libs.jakarta_slide_ant_webdav.maven-pom" value="" />
+    <property name="libs.NetBeans MIDP Components WMA.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/netbeans_midp_components_wma.jar" />
     <property name="do.archive+main.class.available" value="true" />
     <property name="libs.sjmc-ant-utils.src" value="" />
-    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
     <property name="libs.cdc-agui-swing-layout.javadoc" value="" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
     <property name="libs.javac-api.classpath" value="/home/abaddon/netbeans-7.1.1/java/modules/ext/javac-api-nb-7.0-b07.jar" />
-    <property name="libs.nokiaS80-ant-utils.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-nokiaS80.jar" />
     <property name="java.version" value="1.6.0_26" />
-    <property name="libs.NetBeans MIDP Components WMA.javadoc" value="/home/abaddon/netbeans-7.1.1/mobility/modules/docs/netbeans_midp_components_wma-api.zip" />
+    <property name="libs.nokiaS80-ant-utils.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-nokiaS80.jar" />
     <property name="javadoc.version" value="false" />
+    <property name="libs.NetBeans MIDP Components WMA.javadoc" value="/home/abaddon/netbeans-7.1.1/mobility/modules/docs/netbeans_midp_components_wma-api.zip" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="org.openide.version" value="deprecated" />
     <property name="libs.restlib_gfv3ee6.maven-pom" value="" />
@@ -325,8 +323,8 @@
     <property name="annotation.processing.processor.options" value="" />
     <property name="libs.jaxb.src" value="" />
     <property name="libs.Java-EE-GlassFish-v3.wsgenerate" value="" />
-    <property name="libs.cdc-ant-utils.src" value="" />
     <property name="work.dir" value="/home/abaddon/NetBeansProjects/titanPlayer" />
+    <property name="libs.cdc-ant-utils.src" value="" />
     <property name="libs.jaxb.classpath" value="/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/jaxb-impl.jar:/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/jaxb-xjc.jar:/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/jaxb1-impl.jar:/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/activation.jar:/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
     <property name="do.depend" value="false" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
@@ -352,21 +350,20 @@
     <property name="src.dir" value="src" />
     <property name="annotation.processing.enabled" value="true" />
     <property name="libs.jsf20.src" value="" />
-    <property name="libs.DataBindingME-SVG.maven-pom" value="" />
     <property name="libs.jsf12.src" value="" />
+    <property name="libs.DataBindingME-SVG.maven-pom" value="" />
     <property name="libs.nokiadeployment.src" value="" />
     <property name="libs.savaje-ant-utils.javadoc" value="" />
     <property name="libs.struts.javadoc" value="/home/abaddon/netbeans-7.1.1/enterprise/docs/struts-1.3.10-javadoc.zip" />
     <property name="ignore.failing.tests" value="true" />
-    <property name="libs.cdc-ant-utils.maven-pom" value="" />
     <property name="libs.Comet-GlassFish-v3.classpath" value="/home/abaddon/glassfish-3.1.1/glassfish/modules/grizzly-comet.jar" />
+    <property name="libs.cdc-ant-utils.maven-pom" value="" />
     <property name="libs.restlib_gfv3ee6.javadoc" value="/home/abaddon/netbeans-7.0.1/enterprise/docs/jsr311-api-1.1.1-javadoc.zip:/home/abaddon/netbeans-7.0.1/enterprise/docs/jersey-client-1.3-javadoc.zip:/home/abaddon/netbeans-7.0.1/enterprise/docs/jersey-json-1.3-javadoc.zip:/home/abaddon/netbeans-7.0.1/enterprise/docs/jersey-multipart-1.3-javadoc.zip" />
     <property name="libs.primefaces.src" value="" />
     <property name="libs.cdc-agui-swing-layout.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/cdc-agui-swing-layout.jar" />
     <property name="dist.dir" value="dist" />
     <property name="libs.groovy-all.javadoc" value="" />
     <property name="do.archive+manifest.available+main.class" value="true" />
-    <property name="securerandom.source" value="file:/dev/./urandom" />
     <property name="libs.groovy-all.classpath" value="/home/abaddon/netbeans-7.1.1/groovy/modules/ext/groovy-all.jar" />
     <property name="libs.sjmc-ant-utils.classpath" value="/home/abaddon/netbeans-7.1.1/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-sjmc.jar" />
     <property name="javac.fork" value="false" />
@@ -374,34 +371,34 @@
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
     <property name="default.javac.source" value="1.6" />
     <property name="debug-transport-by-os" value="dt_socket" />
-    <property name="libs.MySQLDriver.src" value="" />
     <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="libs.MySQLDriver.src" value="" />
     <property name="libs.ant-contrib.maven-pom" value="" />
     <property name="libs.nokiadeployment.javadoc" value="" />
     <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.6.0_26-b03" />
     <property name="libs.ejb3-persistence.javadoc" value="" />
     <property name="libs.NetBeans MIDP Components.src" value="/home/abaddon/netbeans-7.1.1/mobility/sources/netbeans_midp_components_basic-src.zip" />
-    <property name="libs.sjmc-ant-utils.javadoc" value="" />
     <property name="jna.platform.library.path" value="/usr/lib:/lib" />
     <property name="manifest.available+main.class+mkdist.available" value="true" />
+    <property name="libs.sjmc-ant-utils.javadoc" value="" />
     <property name="default.javac.target" value="1.6" />
     <property name="libs.Java-EE-GlassFish-v3.src" value="" />
     <property name="libs.junit_4.classpath" value="/home/abaddon/netbeans-7.1.1/platform/modules/ext/junit-4.10.jar" />
     <property name="user.timezone" value="" />
-    <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="libs.ant-contrib.src" value="" />
+    <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="netbeans.dirs" value="/home/abaddon/netbeans-7.1.1/nb:/home/abaddon/netbeans-7.1.1/ergonomics:/home/abaddon/netbeans-7.1.1/ide:/home/abaddon/netbeans-7.1.1/java:/home/abaddon/netbeans-7.1.1/apisupport:/home/abaddon/netbeans-7.1.1/bin/../webcommon:/home/abaddon/netbeans-7.1.1/websvccommon:/home/abaddon/netbeans-7.1.1/enterprise:/home/abaddon/netbeans-7.1.1/mobility:/home/abaddon/netbeans-7.1.1/profiler:/home/abaddon/netbeans-7.1.1/bin/../python:/home/abaddon/netbeans-7.1.1/php:/home/abaddon/netbeans-7.1.1/bin/../identity:/home/abaddon/netbeans-7.1.1/harness:/home/abaddon/netbeans-7.1.1/cnd:/home/abaddon/netbeans-7.1.1/dlight:/home/abaddon/netbeans-7.1.1/groovy:/home/abaddon/netbeans-7.1.1/bin/../extra:/home/abaddon/netbeans-7.1.1/bin/../javacard:/home/abaddon/netbeans-7.1.1/javafx:" />
     <property name="libs.jsf20.javadoc" value="/home/abaddon/netbeans-7.1.1/enterprise/docs/javaee6-doc-api.zip" />
     <property name="libs.restlib_gfv3ee6.src" value="" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext" />
     <property name="libs.metro.src" value="" />
-    <property name="libs.semc-ant-utils.src" value="" />
     <property name="libs.savaje-ant-utils.maven-pom" value="" />
+    <property name="libs.semc-ant-utils.src" value="" />
     <property name="libs.absolutelayout.classpath" value="/home/abaddon/netbeans-7.1.1/java/modules/ext/AbsoluteLayout.jar:/home/abaddon/jl1.0.1.jar" />
     <property name="excludes" value="" />
-    <property name="libs.metro.classpath" value="/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/activation.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-api.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-extra-api.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-extra.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-rt.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-tools.jar" />
     <property name="libs.restlib.maven-pom" value="" />
+    <property name="libs.metro.classpath" value="/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/activation.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-api.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-extra-api.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-extra.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-rt.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/metro/webservices-tools.jar" />
     <property name="libs.DataBindingME.javadoc" value="/home/abaddon/netbeans-7.1.1/mobility/modules/docs/netbeans_databindingme-api.zip" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
     <property name="java.class.path" value="/home/abaddon/netbeans-7.1.1/java/modules/ext/AbsoluteLayout.jar:/home/abaddon/jl1.0.1.jar:/home/abaddon/NetBeansProjects/titanPlayer/build/classes:/home/abaddon/netbeans-7.1.1/platform/modules/ext/junit-4.10.jar:/home/abaddon/NetBeansProjects/titanPlayer/build/test/classes:/home/abaddon/netbeans-7.1.1/java/ant/lib/ant-launcher.jar:/home/abaddon/netbeans-7.1.1/java/ant/lib/ant.jar:/home/abaddon/netbeans-7.1.1/java/ant/lib/ant-junit.jar:/home/abaddon/netbeans-7.1.1/java/ant/lib/ant-junit4.jar" />
@@ -421,15 +418,15 @@
     <property name="libs.restlib.javadoc" value="/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-apache-client-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-atom-abdera-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-guice-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-multipart-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-simple-server-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/jersey-spring-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/oauth-client-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/oauth-server-1.8-javadoc.zip:/home/abaddon/netbeans-7.1.1/enterprise/docs/oauth-signature-1.8-javadoc.zip" />
     <property name="libs.JAXB-ENDORSED.classpath" value="/home/abaddon/netbeans-7.1.1/ide/modules/ext/jaxb/api/jaxb-api.jar" />
     <property name="libs.eclipselink.classpath" value="/home/abaddon/netbeans-7.1.1/java/modules/ext/eclipselink/eclipselink-2.3.0.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/eclipselink/javax.persistence-2.0.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/eclipselink/org.eclipse.persistence.jpa.jpql_1.0.0.jar" />
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="libs.beans-binding.javadoc" value="/home/abaddon/netbeans-7.1.1/java/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="libs.Java-EE-GlassFish-v3.classpath" value="/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.security.jacc.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.ejb.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.servlet.jsp.jstl.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/endorsed/javax.annotation.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.servlet.jsp.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jaxrpc-api-osgi.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.enterprise.deploy.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/bean-validator.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.servlet.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.security.auth.message.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.mail.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.resource.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.persistence.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jsf-api.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.management.j2ee.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jstl-impl.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jersey-core.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.transaction.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/endorsed/jaxb-api-osgi.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/javax.jms.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jsf-impl.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jaxr-api-osgi.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/endorsed/webservices-api-osgi.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/weld-osgi-bundle.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/web-core.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jackson-core-asl.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jackson-jaxrs.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jackson-mapper-asl.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jersey-client.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jersey-core.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jersey-gf-server.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jersey-json.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jersey-multipart.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/jettison.jar:/home/abaddon/glassfish-3.1.1/glassfish/modules/mimepull.jar" />
     <property name="java.vm.vendor" value="Sun Microsystems Inc." />
     <property name="libs.CopyLibs.classpath" value="/home/abaddon/netbeans-7.1.1/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="/home/abaddon/netbeans-7.1.1/ide/modules/org-apache-commons-logging.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/cglib-2.2.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-aop-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-asm-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-aspects-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-beans-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-context-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-context-support-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-core-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-expression-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-instrument-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-jdbc-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-jms-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-orm-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-oxm-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-test-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-tx-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-web-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-webmvc-3.0.6.RELEASE.jar:/home/abaddon/netbeans-7.1.1/java/modules/ext/spring-3.0/spring-struts-3.0.6.RELEASE.jar" />
     <property name="libs.jsp-compiler.maven-pom" value="" />
-    <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
     <property name="libs.spring-webmvc.maven-pom" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
     <property name="run.jvmargs" value="" />
     <property name="libs.ejb3-persistence.classpath" value="/home/abaddon/netbeans-7.1.1/java/modules/ext/hibernate/ejb3-persistence.jar" />
     <property name="libs.JAXB-ENDORSED.src" value="" />
@@ -444,16 +441,17 @@
     <property name="build.dir" value="build" />
     <property name="libs.jsp-compilation.classpath" value="/home/abaddon/netbeans-7.1.1/java/ant/lib/ant.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/servlet3.0-jsp2.2-api.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/glassfish-jspparser-3.0.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/jsf-2_1/jsf-api.jar:/home/abaddon/netbeans-7.1.1/enterprise/modules/ext/jstl.jar:/home/abaddon/netbeans-7.1.1/java/ant/lib/ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
-    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="file.encoding" value="UTF-8" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="ant.file.titanPlayer-impl" value="/home/abaddon/NetBeansProjects/titanPlayer/nbproject/build-impl.xml" />
-    <property name="jdkBug6558476" value="false" />
     <property name="javadoc.nonavbar" value="false" />
+    <property name="jdkBug6558476" value="false" />
     <property name="platform.active" value="default_platform" />
   </properties>
-  <testcase classname="LibraryTest" name="TestEmptyLibrary" time="0.0050" />
+  <testcase classname="LibraryTest" name="TestEmptyLibrary" time="0.0080" />
   <testcase classname="LibraryTest" name="testAddSong" time="0.0010" />
-  <testcase classname="LibraryTest" name="testRemoveSong" time="0.0" />
+  <testcase classname="LibraryTest" name="testNoDuplicationInSet" time="0.0010" />
+  <testcase classname="LibraryTest" name="testRemoveSong" time="0.0010" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

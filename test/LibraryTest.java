@@ -3,14 +3,10 @@
  * and open the template in the editor.
  */
 
-import us.abaddonsoftware.bll.Song;
-import us.abaddonsoftware.bll.Library;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.*;
+import us.abaddonsoftware.bll.Library;
+import us.abaddonsoftware.bll.Song;
 
 /**
  *
@@ -57,6 +53,14 @@ public class LibraryTest {
         assertEquals("This test should show only two songs added", 2, myLibrary.songCount());
     }
     
+    @Test 
+    public void testNoDuplicationInSet() //Alot of these tests are written just for me to learn
+        {
+        Library myLibrary = new Library();
+        myLibrary.addSong(new Song("Poison", "Bell Biv Devoe"));
+        myLibrary.addSong(new Song("Poison", "Bell Biv Devoe"));
+        assertTrue("Tests to see if duplicate song can be added to set", myLibrary.songCount() == 0x01);
+        }
     @Test
     public void testRemoveSong()
     {
