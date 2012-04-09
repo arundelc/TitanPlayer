@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="abaddon-laptop" name="LibraryTest" tests="4" time="1.867" timestamp="2012-04-06T21:52:55">
+<testsuite errors="0" failures="0" hostname="abaddon-laptop" name="LibraryTest" tests="7" time="0.382" timestamp="2012-04-09T14:02:03">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -69,7 +69,7 @@
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner LibraryTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/abaddon/NetBeansProjects/titanPlayer/build/test/results/TEST-LibraryTest.xml crashfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junitvmwatcher1287133909264348479.properties propsfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junit5128411216991921880.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner LibraryTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/abaddon/NetBeansProjects/titanPlayer/build/test/results/TEST-LibraryTest.xml crashfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junitvmwatcher272075898646755118.properties propsfile=/home/abaddon/NetBeansProjects/titanPlayer/build/junit1309290337771400790.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="libs.Java-EE-GlassFish-v3.wsjwsdp" value="" />
@@ -448,9 +448,12 @@
     <property name="jdkBug6558476" value="false" />
     <property name="platform.active" value="default_platform" />
   </properties>
-  <testcase classname="LibraryTest" name="TestEmptyLibrary" time="0.0080" />
-  <testcase classname="LibraryTest" name="testAddSong" time="0.0010" />
-  <testcase classname="LibraryTest" name="testNoDuplicationInSet" time="0.0010" />
+  <testcase classname="LibraryTest" name="TestEmptyLibrary" time="0.0030" />
+  <testcase classname="LibraryTest" name="testAddSong" time="0.0" />
+  <testcase classname="LibraryTest" name="testSortByTitle" time="0.0040" />
+  <testcase classname="LibraryTest" name="testSortByArtist" time="0.0" />
+  <testcase classname="LibraryTest" name="testGetAllSongsInLibrary" time="0.0" />
+  <testcase classname="LibraryTest" name="testNoDuplicationInSet" time="0.0" />
   <testcase classname="LibraryTest" name="testRemoveSong" time="0.0010" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

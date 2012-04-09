@@ -18,8 +18,8 @@ public class Song implements Comparable<Song>
     
     public Song(String trackTitle, String trackArtist)
     {
-        this.title = trackTitle;
-        this.artist = trackArtist;
+        title = trackTitle;
+        artist = trackArtist;
     }
     
     public String getTitle()
@@ -34,28 +34,23 @@ public class Song implements Comparable<Song>
     
     
     
-    
     @Override
     public int compareTo(Song songToCompare) 
     {
-    int result = this.getTitle().compareTo(songToCompare.getTitle());
-       if (result == 0)
-       {
-       result = this.getArtist().compareTo(songToCompare.getArtist());
-       }
-    return result;
+    int result = this.getArtist().compareToIgnoreCase(songToCompare.getArtist());
+     if(result == 0)
+     {
+         result = this.getTitle().compareToIgnoreCase(songToCompare.getTitle());
      }
+    return result; 
+    }
+  
 
 
-        
-
-    
-
-
-
- 
-
-
-
+    @Override
+    public String toString()
+    {
+        return title + artist;
+    }
     
 }

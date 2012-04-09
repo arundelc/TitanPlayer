@@ -4,24 +4,31 @@
  */
 package us.abaddonsoftware.bll;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  * @author abaddon
  */
-public class Playlist {
+public class Playlist 
+{
     private String playlistName;
     private List<Song> playlist;
+    
     public Playlist(String string) 
     {
      playlistName = string;
-     playlist = new LinkedList();
+     playlist = new ArrayList();
     }
     public String getName()
     {
         return playlistName;
+    }
+    
+    public Song getSongFromIndex(int index)
+    {
+        return playlist.get(index);
     }
     
     public void addSong(Song songToAdd)
