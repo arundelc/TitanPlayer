@@ -4,7 +4,6 @@
  */
 package us.abaddonsoftware.bll;
 
-import java.util.Comparator;
 
 
 /**
@@ -50,7 +49,7 @@ public class Song implements Comparable<Song>
     @Override
     public String toString()
     {
-        return title + artist;
+        return title + "/t" + artist + "/t";
     }
     
 }

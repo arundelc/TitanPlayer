@@ -4,9 +4,7 @@
  */
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.TreeSet;
 import static org.junit.Assert.*;
 import org.junit.*;
 import us.abaddonsoftware.bll.Library;
@@ -22,7 +20,8 @@ public class LibraryTest {
     Song newSong3;
     Song newSong4;
     Song newSong5;
-    Library newLibrary;
+    Song newSong6;
+    Library testLibrary;
     public LibraryTest() {
     }
 
@@ -37,12 +36,13 @@ public class LibraryTest {
     @Before
     public void setUp() 
     {
-        newLibrary = new Library();
+        testLibrary = new Library();
         newSong1 = new Song("We care a-lot", "Faith No More");
         newSong2 = new Song("Poison", "Bell Biv Devoe");      
         newSong3 = new Song("Milkshake", "Good Night Nurse");
         newSong4 = new Song("Epic", "Faith No More");
         newSong5 = new Song("Epic", "Mickey");
+        newSong6 = new Song("we care a-lot", "Faith no more");
     }
     
     @After
@@ -63,57 +63,57 @@ public class LibraryTest {
     @Test
     public void testAddSong()
     {
-        newLibrary.addSong(newSong1);
-        newLibrary.addSong(newSong2);
-        assertEquals("This test should show only two songs added", 2, newLibrary.songCount());
+        testLibrary.addSong(newSong1);
+        testLibrary.addSong(newSong2);
+        assertEquals("This test should show only two songs added", 2, testLibrary.songCount());
     }
     @Test
     public void testSortByTitle() //I don't like this test
     {
-        newLibrary.addSong(newSong3);
-        newLibrary.addSong(newSong5);
-        newLibrary.sortByArtist();  // make sure sorted by artist; might be useful if default sort changes
-        newLibrary.sortByTitle();   // then we sort by title
+        testLibrary.addSong(newSong3);
+        testLibrary.addSong(newSong5);
+        testLibrary.sortByArtist();  // make sure sorted by artist; might be useful if default sort changes
+        testLibrary.sortByTitle();   // then we sort by title
         List<Song> compare = new ArrayList<Song>(); //lets me set the order
         compare.add(newSong5); 
         compare.add(newSong3); 
-        assertArrayEquals(compare.toArray(), newLibrary.getAllSongsInLibrary().toArray());
+        assertArrayEquals(compare.toArray(), testLibrary.getAllSongsInLibrary().toArray());
     }
     @Test
     public void testSortByArtist() //this test also sucks
     {
-        newLibrary.addSong(newSong3);
-        newLibrary.addSong(newSong5);
-        newLibrary.sortByTitle();
-        newLibrary.sortByArtist();
+        testLibrary.addSong(newSong3);
+        testLibrary.addSong(newSong5);
+        testLibrary.sortByTitle();
+        testLibrary.sortByArtist();
         List<Song> compare = new ArrayList<Song>();
         compare.add(newSong3);
         compare.add(newSong5);
-        assertArrayEquals(compare.toArray(), newLibrary.getAllSongsInLibrary().toArray());
+        assertArrayEquals(compare.toArray(), testLibrary.getAllSongsInLibrary().toArray());
     }
     @Test
     public void testGetAllSongsInLibrary()
     {
-        newLibrary.addSong(newSong5);
-        newLibrary.addSong(newSong4); 
+        testLibrary.addSong(newSong5);
+        testLibrary.addSong(newSong4); 
         List<Song> compare = new ArrayList<Song>();
         compare.add(newSong4);
         compare.add(newSong5);
-        assertArrayEquals(compare.toArray(), newLibrary.getAllSongsInLibrary().toArray());
+        assertArrayEquals(compare.toArray(), testLibrary.getAllSongsInLibrary().toArray());
     }
     @Test 
     public void testNoDuplicationInSet() //Alot of these tests are written just for me to learn
         {
-        newLibrary.addSong(newSong1);
-        newLibrary.addSong(newSong1);
-        assertTrue("Tests to see if duplicate song can be added to set", newLibrary.songCount() == 0x01);
+        testLibrary.addSong(newSong1);
+        testLibrary.addSong(newSong1);
+        assertTrue("Tests to see if duplicate song can be added to set", testLibrary.songCount() == 0x01);
         }
     @Test
     public void testRemoveSong()
     {
-        newLibrary.addSong(newSong3);
-        newLibrary.removeSong(newSong3);
-        assertFalse("Song should not exist", newLibrary.songExists(newSong3)); 
+        testLibrary.addSong(newSong3);
+        testLibrary.removeSong(newSong3);
+        assertFalse("Song should not exist", testLibrary.songExists(newSong3)); 
     }
 
 }

@@ -55,35 +55,35 @@ public class PlaylistTest {
     @Test
     public void testNameOfPlaylist()
     {
-        Playlist newPlaylist = new Playlist("Garbage that I like");
-        assertTrue("This name should match the original name", newPlaylist.getName().equals("Garbage that I like"));
+        Playlist testPlaylist = new Playlist("Garbage that I like");
+        assertTrue("This name should match the original name", testPlaylist.getName().equals("Garbage that I like"));
     }
     
     @Test
     public void testAddToPlaylist()
     {
-        Playlist newPlaylist = new Playlist("Garbage that I like");
-        newPlaylist.addSong(newSong1);
-        assertTrue("playlist should increment and playlist should contain the song", newPlaylist.songCount() == 1 && newPlaylist.songExists(newSong1));
+        Playlist testPlaylist = new Playlist("Garbage that I like");
+        testPlaylist.addSong(newSong1);
+        assertTrue("playlist should increment and playlist should contain the song", testPlaylist.songCount() == 1 && testPlaylist.songExists(newSong1));
     }
     
     @Test 
     public void testRemoveFromPlaylist()
     {
-        Playlist newPlaylist = new Playlist("Remove Playlist Test");
-        newPlaylist.addSong(newSong2);
-        int holdCountBeforeRemove = newPlaylist.songCount();
-        newPlaylist.removeSong(newSong2);
-        assertTrue("The song count before removal should be one and after should be zero", holdCountBeforeRemove == 1 && newPlaylist.songCount() == 0);     
+        Playlist testPlaylist = new Playlist("Remove Playlist Test");
+        testPlaylist.addSong(newSong2);
+        int holdCountBeforeRemove = testPlaylist.songCount();
+        testPlaylist.removeSong(newSong2);
+        assertTrue("The song count before removal should be one and after should be zero", holdCountBeforeRemove == 1 && testPlaylist.songCount() == 0);     
     }
     
     @Test
     public void testAddDuplicateSong() //linked list should allow me to add a dupe
     {
-        Playlist newPlaylist = new Playlist("The B-sides");
-        newPlaylist.addSong(newSong3);
-        newPlaylist.addSong(newSong3);
-        newPlaylist.addSong(newSong3);
-        assertTrue("Song count should be 3 after 3 duplicates added", newPlaylist.songCount() == 3);    
+        Playlist testPlaylist = new Playlist("The B-sides");
+        testPlaylist.addSong(newSong3);
+        testPlaylist.addSong(newSong3);
+        testPlaylist.addSong(newSong3);
+        assertTrue("Song count should be 3 after 3 duplicates added", testPlaylist.songCount() == 3);    
     }
 }

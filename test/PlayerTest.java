@@ -3,8 +3,8 @@
  * and open the template in the editor.
  */
 
-import org.junit.*;
 import static org.junit.Assert.*;
+import org.junit.*;
 import us.abaddonsoftware.bll.Player;
 import us.abaddonsoftware.bll.Playlist;
 import us.abaddonsoftware.bll.Song;
@@ -14,9 +14,9 @@ import us.abaddonsoftware.bll.Song;
  * @author abaddon
  */
 public class PlayerTest {
-    Song mySong1;
-    Song mySong2;
-    Song mySong3;
+    Song newSong1;
+    Song newSong2;
+    Song newSong3;
     Playlist testPlaylist;
     Player newPlayer;
     
@@ -34,13 +34,13 @@ public class PlayerTest {
     @Before
     public void setUp() 
     {
-        mySong1 = new Song( "Zombie", "Cranberries");
-        mySong2 = new Song("Nerdy Girl", "Esther");
-        mySong3 = new Song("Zydrate Anatomy", "Repo: The Genetic Opera");
+        newSong1 = new Song( "Zombie", "Cranberries");
+        newSong2 = new Song("Nerdy Girl", "Esther");
+        newSong3 = new Song("Zydrate Anatomy", "Repo: The Genetic Opera");
         testPlaylist = new Playlist("Player Test");
-        testPlaylist.addSong(mySong1);
-        testPlaylist.addSong(mySong2);
-        testPlaylist.addSong(mySong3);
+        testPlaylist.addSong(newSong1);
+        testPlaylist.addSong(newSong2);
+        testPlaylist.addSong(newSong3);
         newPlayer = new Player();
         newPlayer.loadPlaylist(testPlaylist);
     }
@@ -56,17 +56,17 @@ public class PlayerTest {
     @Test
     public void testGetCurrentSong()
     {
-        assertEquals(mySong1, newPlayer.getCurrentSong());
+        assertEquals(newSong1, newPlayer.getCurrentSong());
     }
     @Test
     public void testNoNextSong()
     {
-        assertTrue(newPlayer.getNextSong().compareTo(mySong2) == 0x0 && newPlayer.getNextSong().compareTo(mySong3) == 0x0 && newPlayer.getNextSong().compareTo(mySong3) == 0x0);
+        assertTrue(newPlayer.getNextSong().compareTo(newSong2) == 0x0 && newPlayer.getNextSong().compareTo(newSong3) == 0x0 && newPlayer.getNextSong().compareTo(newSong3) == 0x0);
     }
     @Test
     public void testGetNextSong()
     {
-        assertTrue(newPlayer.getNextSong().compareTo(mySong2) == 0x0 && newPlayer.getNextSong().compareTo(mySong3) == 0x0);
+        assertTrue(newPlayer.getNextSong().compareTo(newSong2) == 0x0 && newPlayer.getNextSong().compareTo(newSong3) == 0x0);
     }
     @Test
     public void testPlay()
@@ -90,7 +90,7 @@ public class PlayerTest {
       newPlayer.getNextSong();
       newPlayer.getNextSong();
       Song mySongTest = newPlayer.getNextSong();
-      testPlaylist.addSong(mySong2);
-      assertTrue(newPlayer.getNextSong().compareTo(mySong2) == 0 && mySongTest.compareTo(mySong3) == 0); 
+      testPlaylist.addSong(newSong2);
+      assertTrue(newPlayer.getNextSong().compareTo(newSong2) == 0 && mySongTest.compareTo(newSong3) == 0); 
     }
 }
