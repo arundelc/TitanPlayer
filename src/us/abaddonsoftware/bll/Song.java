@@ -37,10 +37,10 @@ public class Song implements Comparable<Song>
     @Override
     public int compareTo(Song songToCompare) 
     {
-    int result = this.getArtist().compareToIgnoreCase(songToCompare.getArtist());
+    int result = this.getArtist().compareTo(songToCompare.getArtist());
      if(result == 0)
      {
-         result = this.getTitle().compareToIgnoreCase(songToCompare.getTitle());
+         result = this.getTitle().compareTo(songToCompare.getTitle());
      }
     return result; 
     }

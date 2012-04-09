@@ -30,10 +30,11 @@ public class Library
         return songs;
     }
     
-        public void printAllSongsInLibrary()
+ /*       public void printAllSongsInLibrary()
     {
-        System.out.println(songs);
+        System.out.println(songs);   //useful function for debugging output of sorts
     }
+*/
     public void addSong(Song newSong)
     {
      songs.add(newSong);
@@ -75,7 +76,6 @@ public class Library
          result = song1.getTitle().compareToIgnoreCase(song2.getTitle());
      }
     return result;
-   // return song1.getArtist().compareTo(song2.getArtist());
  }
 }
         public class ByTitle implements Comparator<Song>
@@ -84,10 +84,10 @@ public class Library
     @Override
     public int compare(Song song1, Song song2) 
   {
-     int result = song1.getTitle().compareTo(song2.getTitle());
+     int result = song1.getTitle().compareToIgnoreCase(song2.getTitle());
      if(result == 0)
      {
-         result = song1.getArtist().compareTo(song2.getArtist());
+         result = song1.getArtist().compareToIgnoreCase(song2.getArtist());
      }
     return result;
    // return song1.getArtist().compareTo(song2.getArtist());
