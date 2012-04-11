@@ -52,7 +52,8 @@ public class PlayerGUI extends javax.swing.JFrame {
         sortComboBox = new javax.swing.JComboBox();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        LoginMenuItem = new javax.swing.JMenuItem();
+        AddToLibraryMenuItem = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,8 +118,16 @@ public class PlayerGUI extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
-        jMenuItem1.setText("Add To Library");
-        jMenu1.add(jMenuItem1);
+        LoginMenuItem.setText("Login to your Account");
+        LoginMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OpenLogin(evt);
+            }
+        });
+        jMenu1.add(LoginMenuItem);
+
+        AddToLibraryMenuItem.setText("Add To Library");
+        jMenu1.add(AddToLibraryMenuItem);
 
         jMenuBar1.add(jMenu1);
 
@@ -129,6 +138,11 @@ public class PlayerGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void OpenLogin(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenLogin
+    UserAccountScreen uas = new UserAccountScreen();
+        uas.setVisible(true);      // TODO add your handling code here:
+    }//GEN-LAST:event_OpenLogin
 
     /**
      * @param args the command line arguments
@@ -166,6 +180,8 @@ public class PlayerGUI extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem AddToLibraryMenuItem;
+    private javax.swing.JMenuItem LoginMenuItem;
     private javax.swing.JLabel albumNameLabel;
     private javax.swing.JLabel artistNameLabel;
     private javax.swing.JLabel currentPlaylistLabel;
@@ -173,7 +189,6 @@ public class PlayerGUI extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JList libraryList;

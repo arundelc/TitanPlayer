@@ -3,13 +3,10 @@
  * and open the template in the editor.
  */
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import org.junit.*;
 import us.abaddonsoftware.bll.Playlist;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import us.abaddonsoftware.bll.Song;
 
 /**
@@ -78,7 +75,7 @@ public class PlaylistTest {
     }
     
     @Test
-    public void testAddDuplicateSong() //linked list should allow me to add a dupe
+    public void testAddDuplicateSong() //list should allow me to add a dupe
     {
         Playlist testPlaylist = new Playlist("The B-sides");
         testPlaylist.addSong(newSong3);

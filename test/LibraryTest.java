@@ -20,7 +20,6 @@ public class LibraryTest {
     Song newSong3;
     Song newSong4;
     Song newSong5;
-    Song newSong6;
     Library testLibrary;
     public LibraryTest() {
     }
@@ -42,7 +41,6 @@ public class LibraryTest {
         newSong3 = new Song("Milkshake", "Good Night Nurse");
         newSong4 = new Song("Epic", "Faith No More");
         newSong5 = new Song("Epic", "Mickey");
-        newSong6 = new Song("we care a-lot", "Faith no more");
     }
     
     @After
@@ -94,8 +92,8 @@ public class LibraryTest {
     @Test
     public void testGetAllSongsInLibrary()
     {
-        testLibrary.addSong(newSong5);
-        testLibrary.addSong(newSong4); 
+        testLibrary.addSong(newSong4);
+        testLibrary.addSong(newSong5); 
         List<Song> compare = new ArrayList<Song>();
         compare.add(newSong4);
         compare.add(newSong5);
